@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+	<div id="hero">
+		<%- include("partials/navbar") -%>
+
+		<div class="container">
+			<div class="intro">
+				<h1>Get countdown to your event</h1>
+				<p>Event like birthday | launch | dinner | get together | etc.</p>
+			</div>
+
+			<form action="/" method="POST">
+				<h3>Date and Time of the event</h3><br><br>
+				<label for="date">Enter date</label>
+				<input type="date" name="date" id="date"><br>
+				<label for="time">Enter time</label>
+				<input type="time" name="time" id="time"><br>
+				<button type="submit" id="start">start</button>
+			</form>
+		</div>
+	</div>
+
+<%- include("partials/footer"); -%>
